@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CustomTableViewCell" rowHeight="78" id="ApX-r6-gTf" customClass="CustomTableViewCell" customModule="Mocha" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ApX-r6-gTf" id="AZP-V6-ARV">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Width:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="mdS-X6-iCS">
+                        <rect key="frame" x="64" y="37" width="37" height="15"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Height:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="hy5-Ej-1lc">
+                        <rect key="frame" x="109" y="37" width="41" height="15"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ClassName" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="17" preferredMaxLayoutWidth="196" translatesAutoresizingMaskIntoConstraints="NO" id="zqh-De-D8b">
+                        <rect key="frame" x="64" y="12" width="90" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QtB-4K-XBr">
+                        <rect key="frame" x="14" y="11" width="42" height="42"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="Jc1-Jp-wav"/>
+                            <constraint firstAttribute="height" constant="42" id="ocz-XB-CHT"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QtB-4K-XBr" firstAttribute="leading" secondItem="AZP-V6-ARV" secondAttribute="leading" constant="14" id="5eS-xD-iFn"/>
+                    <constraint firstItem="mdS-X6-iCS" firstAttribute="top" secondItem="zqh-De-D8b" secondAttribute="bottom" constant="4" id="GJn-mI-cfM"/>
+                    <constraint firstItem="zqh-De-D8b" firstAttribute="top" secondItem="AZP-V6-ARV" secondAttribute="topMargin" constant="4" id="HyH-V8-ej8"/>
+                    <constraint firstItem="mdS-X6-iCS" firstAttribute="leading" secondItem="QtB-4K-XBr" secondAttribute="trailing" constant="8" id="Qvg-lG-bgW"/>
+                    <constraint firstItem="zqh-De-D8b" firstAttribute="leading" secondItem="QtB-4K-XBr" secondAttribute="trailing" constant="8" id="TAN-FH-6qR"/>
+                    <constraint firstItem="QtB-4K-XBr" firstAttribute="top" secondItem="AZP-V6-ARV" secondAttribute="topMargin" constant="3" id="YgK-0M-Lvx"/>
+                    <constraint firstItem="hy5-Ej-1lc" firstAttribute="leading" secondItem="mdS-X6-iCS" secondAttribute="trailing" constant="8" id="akY-tv-UT6"/>
+                    <constraint firstItem="mdS-X6-iCS" firstAttribute="centerY" secondItem="hy5-Ej-1lc" secondAttribute="centerY" id="nh2-Er-4YR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="classNameLabel" destination="zqh-De-D8b" id="uSo-Em-soq"/>
+                <outlet property="colorView" destination="QtB-4K-XBr" id="y6i-Uq-coe"/>
+                <outlet property="heightLabel" destination="hy5-Ej-1lc" id="F33-xT-YNb"/>
+                <outlet property="widthLabel" destination="mdS-X6-iCS" id="jYP-f0-inF"/>
+            </connections>
+            <point key="canvasLocation" x="608" y="169"/>
+        </tableViewCell>
+    </objects>
+</document>
