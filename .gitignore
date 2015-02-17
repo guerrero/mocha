@@ -1,0 +1,11 @@
+Pods
+
+*.xcodeproj/project.xcworkspace/xcuserdata
+*.xcodeproj/xcuserdata
+*.xcworkspace/xcuserdata
+*.xcworkspace/xcshareddata
+
+.DS_Store
+.Trashes
+*.swp
+*.lock
